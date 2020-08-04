@@ -1,4 +1,9 @@
 import re
+import pandas as pd
+import numpy as np
+import csv
+import codecs
+
 import os
 def Arman_Corp():
     with open('./arman_main_corp.txt', mode='a', encoding='utf8') as mainTxt:
@@ -55,5 +60,33 @@ def Feili_Corp2():
                 ftxt.close()
     mainTxt.close()
 
-Feili_Corp2()
-print(os.listdir('../Files/2_feili/600K'))
+def create_main_file():
+    with open('main_corp.txt',mode='a',encoding='utf-8')as main:
+        with open('arman_main_corp.txt', mode='r', encoding='utf-8')as armin:
+            line1 = armin.readline()
+            while line1:
+                main.write(line1)
+                line1 = armin.readline()
+        with open('feili_main_corp.txt', mode='r', encoding='utf-8')as feili1:
+            line2 = feili1.readline()
+            while line2:
+                main.write(line2)
+                line2 = feili1.readline()
+        with open('feili600_main_corp.txt', mode='r', encoding='utf-8')as feili2:
+            line3 = feili2.readline()
+            while line3:
+                main.write(line3)
+                line3 = feili2.readline()
+
+def create_csv():
+    with open('main_corp.txt', 'r') as in_file:
+
+        line = in_file.readline()
+        print(line)
+        with open('main_corp.csv', 'w') as out_file:
+            writer = csv.writer(out_file)
+            writer.writerow(('Word', 'Tag'))
+            print((line.decode('utf-8')))
+            writer.writerows((line[0],line[1]))
+
+create_csv()
