@@ -68,7 +68,7 @@ def Feili_Corp2():
                     try:
                         if len(line) != 1:
                             w = ' '.join(line.split()[0:-1])
-                            t = line.split()[-1]
+                            t = line.split()[-1].replace('-','_')
 
                             if flag == 1:
                                 sentCounter += 1
@@ -135,4 +135,4 @@ def create_csv():
 
 
 # create_main_file()
-Feili_Corp()
+Feili_Corp2()
