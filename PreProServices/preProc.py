@@ -61,32 +61,52 @@ def Feili_Corp2():
     mainTxt.close()
 
 def create_main_file():
-    with open('main_corp.txt',mode='a',encoding='utf-8')as main:
+    with open('main_corp2.txt',mode='w+',encoding='utf-8')as main:
         with open('arman_main_corp.txt', mode='r', encoding='utf-8')as armin:
             line1 = armin.readline()
             while line1:
-                main.write(line1)
+                line10 = line1.split()[0]
+                line12 = ' '.join(line1.split()[1:])
+                main.write(line12+' '+line10+'\n')
                 line1 = armin.readline()
         with open('feili_main_corp.txt', mode='r', encoding='utf-8')as feili1:
             line2 = feili1.readline()
             while line2:
-                main.write(line2)
+                line20 = line2.split()[0]
+                line22 = ' '.join(line2.split()[1:])
+
+                main.write(line20 + ' ' + line22 + '\n')
                 line2 = feili1.readline()
         with open('feili600_main_corp.txt', mode='r', encoding='utf-8')as feili2:
             line3 = feili2.readline()
             while line3:
-                main.write(line3)
+                line30 = line3.split()[0]
+                line32 = ' '.join(line3.split()[1:])
+                main.write(line30 + ' ' + line32 + '\n')
                 line3 = feili2.readline()
 
 def create_csv():
-    with open('main_corp.txt', 'r') as in_file:
+    with open('main_corp2.txt', 'r',encoding='utf-8') as in_file:
 
-        line = in_file.readline()
-        print(line)
-        with open('main_corp.csv', 'w') as out_file:
+        line = in_file.readline().replace('\n','')
+        with open('main_corp.csv', 'w+',encoding='utf-8-sig',newline='') as out_file:
             writer = csv.writer(out_file)
             writer.writerow(('Word', 'Tag'))
-            print((line.decode('utf-8')))
-            writer.writerows((line[0],line[1]))
+            while line:
+                w = ' '.join(line.split()[1:])
+                t = line.split()[0]
+                writer.writerow((w,t))
 
+                # if len(line.split()) > 2:
+                #     writer.writerow((line.split()[-1], line[:-1]))
+                # else:
+                #     try:
+                #         writer.writerow(((line.split()[1]),(line.split()[0])))
+                #     except(UnicodeEncodeError):
+                #         print(line)
+                line = in_file.readline().replace('\n','')
+
+
+
+# create_main_file()
 create_csv()
