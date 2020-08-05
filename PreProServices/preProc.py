@@ -23,42 +23,68 @@ def Arman_Corp():
     mainTxt.close()
 
 def Feili_Corp():
-    with open('./feili_main_corp.txt', mode='a', encoding='utf8') as mainTxt:
-        for t in range(1, 710):
-            with open('../Files/2_feili/300K/'+str(t)+'.txt' , mode='r' , encoding='utf8') as ftxt:
-                line = ftxt.readline()
-                while line:
-                    if line.rstrip():
-                        if len(line.split()) > 2:
-                            line = line.split()[-1] + ' '+line[:-2]
+    # with open('./feili_main_corp.txt', mode='a', encoding='utf8') as mainTxt:
 
-                        else:
-                            line = line.split()[1]+' '+line.split()[0]
-                        mainTxt.write(line+'\n')
+        with open('feili300.csv', 'w+', encoding='utf-8-sig', newline='') as out_file:
+            writer = csv.writer(out_file)
+            writer.writerow(('Sentence #', 'Word', 'Tag'))
+            flag = 0
+            sentCounter = 1
+            for t in range(1, 710):
+                with open('../Files/2_feili/300K/'+str(t)+'.txt' , mode='r' , encoding='utf8') as ftxt:
                     line = ftxt.readline()
-            ftxt.close()
-    mainTxt.close()
+                    while line:
+                        try:
+                            if len(line) != 1:
+                                w = ' '.join(line.split()[0:-1])
+                                t = line.split()[-1]
+
+                                if flag == 1:
+                                    sentCounter += 1
+                                    s = 'Sentence: ' + str(sentCounter)
+                                    writer.writerow((s, w, t))
+                                    flag = 0
+                                else:
+                                    writer.writerow(('', w, t))
+                                if w == '!' or w == '?':
+                                    flag = 1
+                            else:
+                                flag = 1
+                        except(IndexError):
+                            print(len(line))
+                        line = ftxt.readline()
 
 def Feili_Corp2():
     files = os.listdir('../Files/2_feili/600K')
-    with open('./feili600_main_corp.txt', mode='a', encoding='utf8') as mainTxt:
+    with open('feili600.csv', 'w+', encoding='utf-8-sig', newline='') as out_file:
+        writer = csv.writer(out_file)
+        writer.writerow(('Sentence #', 'Word', 'Tag'))
+        flag = 0
+        sentCounter = 10021
         for (index,file) in enumerate(files):
-            for t in range(1, 710):
-                with open('../Files/2_feili/600K/'+file , mode='r' , encoding='utf8') as ftxt:
+            with open('../Files/2_feili/600K/'+file , mode='r' , encoding='utf8') as ftxt:
+                line = ftxt.readline()
+                while line:
+                    try:
+                        if len(line) != 1:
+                            w = ' '.join(line.split()[0:-1])
+                            t = line.split()[-1]
+
+                            if flag == 1:
+                                sentCounter += 1
+                                s = 'Sentence: ' + str(sentCounter)
+                                writer.writerow((s, w, t))
+                                flag = 0
+                            else:
+                                writer.writerow(('', w, t))
+                            if w == '!' or w == '?':
+                                flag = 1
+                        else:
+                            flag = 1
+                    except(IndexError):
+                        print(len(line))
                     line = ftxt.readline()
-                    while line:
-                        if line.rstrip():
-                            try:
-                                if len(line.split()) > 2:
-                                    line = line.split()[-1] + ' '+(line.split()[:-2]).replace('-','_').upper()
-                                else:
-                                    line = line.split()[1]+' '+(line.split()[0]).replace('-','_').upper()
-                            except(IndexError):
-                                print(line+file)
-                            mainTxt.write(line+'\n')
-                        line = ftxt.readline()
-                ftxt.close()
-    mainTxt.close()
+
 
 def create_main_file():
     with open('main_corp2.txt',mode='w+',encoding='utf-8')as main:
@@ -109,4 +135,4 @@ def create_csv():
 
 
 # create_main_file()
-create_csv()
+Feili_Corp()

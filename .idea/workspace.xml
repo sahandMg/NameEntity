@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee6496a9-a10d-4e13-8014-007bc3ecd43f" name="Default Changelist" comment="" />
+    <list default="true" id="ee6496a9-a10d-4e13-8014-007bc3ecd43f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Classes/SentenceGetter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/2_feili/300K/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Files/2_feili/300K/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PreProServices/preProc.py" beforeDir="false" afterPath="$PROJECT_DIR$/PreProServices/preProc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -108,6 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596522888537</updated>
       <workItem from="1596522901276" duration="31434000" />
+      <workItem from="1596640753144" duration="10644000" />
     </task>
     <servers />
   </component>
@@ -115,22 +123,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="212" key="GridCell.Tab.0.bottom" timestamp="1596623996709">
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1596654274672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596623996709" />
-    <state width="1877" height="212" key="GridCell.Tab.0.center" timestamp="1596623996709">
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596654274672" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1596654274671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596623996709" />
-    <state width="1877" height="212" key="GridCell.Tab.0.left" timestamp="1596623996709">
+    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596654274671" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1596654274671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596623996709" />
-    <state width="1877" height="212" key="GridCell.Tab.0.right" timestamp="1596623996709">
+    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596654274671" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1596654274672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596623996709" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596654274672" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1596539431322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,7 +149,9 @@
     <state x="656" y="118" width="737" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596539532766" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NameEntity$index.coverage" NAME="index Coverage Results" MODIFIED="1596649842187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Name_Entity$index.coverage" NAME="index Coverage Results" MODIFIED="1596613340506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Name_Entity$preProc.coverage" NAME="preProc Coverage Results" MODIFIED="1596623996702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProServices" />
+    <SUITE FILE_PATH="coverage/NameEntity$preProc.coverage" NAME="preProc Coverage Results" MODIFIED="1596654274660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProServices" />
   </component>
 </project>

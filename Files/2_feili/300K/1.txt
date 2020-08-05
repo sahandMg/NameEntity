@@ -172,7 +172,3 @@ www.region.tehran.ir	O
 مراجعه	O
 نمایند	O
 .	O
-
-انتهای	O
-پیام	O
-
