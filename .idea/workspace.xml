@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ee6496a9-a10d-4e13-8014-007bc3ecd43f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PreProServices/feili600.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PreProServices/feili600.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/SentenceGetter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/SentenceGetter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataseet/dataset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/dataset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PreProServices/feili300.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PreProServices/feili300.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PreProServices/preProc.py" beforeDir="false" afterPath="$PROJECT_DIR$/PreProServices/preProc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,29 @@
       <recent name="C:\Users\SahandMg\Documents\Python_Projects\Name_Entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.preProc">
+  <component name="RunManager" selected="Python.index">
+    <configuration name="SentenceGetter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Name_Entity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classes/SentenceGetter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Name_Entity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,8 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.preProc" />
         <item itemvalue="Python.index" />
+        <item itemvalue="Python.preProc" />
+        <item itemvalue="Python.SentenceGetter" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596522888537</updated>
       <workItem from="1596522901276" duration="31434000" />
-      <workItem from="1596640753144" duration="11668000" />
+      <workItem from="1596640753144" duration="20739000" />
     </task>
     <servers />
   </component>
@@ -121,25 +147,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1596655637766">
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1596699519476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596655637766" />
-    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1596655637765">
+    <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1600.984@0.0.1600.984" timestamp="1596662079371" />
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596699519476" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1596699519475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596655637765" />
-    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1596655637765">
+    <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1600.984@0.0.1600.984" timestamp="1596662079370" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596699519475" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1596699519475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596655637765" />
-    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1596655637766">
+    <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1600.984@0.0.1600.984" timestamp="1596662079370" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596699519475" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1596699519475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596655637766" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1596539431322">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1600.984@0.0.1600.984" timestamp="1596662079370" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596699519475" />
+    <state width="498" height="422" key="SwitcherDM" timestamp="1596662020773">
+      <screen x="0" y="0" width="1600" height="984" />
     </state>
+    <state width="498" height="422" key="SwitcherDM/0.0.1600.984@0.0.1600.984" timestamp="1596662020773" />
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596539431322" />
     <state x="656" y="118" width="737" height="804" key="find.popup" timestamp="1596539532766">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -147,9 +178,10 @@
     <state x="656" y="118" width="737" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596539532766" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NameEntity$index.coverage" NAME="index Coverage Results" MODIFIED="1596649842187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NameEntity$index.coverage" NAME="index Coverage Results" MODIFIED="1596699519465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Name_Entity$index.coverage" NAME="index Coverage Results" MODIFIED="1596613340506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Name_Entity$preProc.coverage" NAME="preProc Coverage Results" MODIFIED="1596623996702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProServices" />
-    <SUITE FILE_PATH="coverage/NameEntity$preProc.coverage" NAME="preProc Coverage Results" MODIFIED="1596655637751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProServices" />
+    <SUITE FILE_PATH="coverage/NameEntity$SentenceGetter.coverage" NAME="SentenceGetter Coverage Results" MODIFIED="1596667170942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/NameEntity$preProc.coverage" NAME="preProc Coverage Results" MODIFIED="1596668003377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProServices" />
   </component>
 </project>

@@ -30,6 +30,7 @@ def Feili_Corp():
             writer.writerow(('Sentence #', 'Word', 'Tag'))
             flag = 0
             sentCounter = 1
+            k = 100
             for t in range(1, 710):
                 with open('../Files/2_feili/300K/'+str(t)+'.txt' , mode='r' , encoding='utf8') as ftxt:
                     line = ftxt.readline()
@@ -39,19 +40,25 @@ def Feili_Corp():
                                 w = ' '.join(line.split()[0:-1])
                                 t = line.split()[-1]
 
-                                if flag == 1:
-                                    sentCounter += 1
-                                    s = 'Sentence: ' + str(sentCounter)
+                                if k == 100:
+                                    s = 'Sentence: ' + str(1)
+                                    print(s)
                                     writer.writerow((s, w, t))
-                                    flag = 0
                                 else:
-                                    writer.writerow(('', w, t))
-                                if w == '!' or w == '?':
-                                    flag = 1
+                                    if flag == 1:
+                                        sentCounter += 1
+                                        s = 'Sentence: ' + str(sentCounter)
+                                        writer.writerow((s, w, t))
+                                        flag = 0
+                                    else:
+                                        writer.writerow(('', w, t))
+                                    if w == '!' or w == '?':
+                                        flag = 1
                             else:
                                 flag = 1
                         except(IndexError):
                             print(len(line))
+                        k = 101
                         line = ftxt.readline()
 
 def Feili_Corp2():
@@ -135,4 +142,4 @@ def create_csv():
 
 
 # create_main_file()
-Feili_Corp2()
+Feili_Corp()

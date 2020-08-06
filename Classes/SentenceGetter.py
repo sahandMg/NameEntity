@@ -5,17 +5,15 @@ class SentenceGetter(object):
         self.data = data
         self.empty = False
         agg_func = lambda s: [(w, t) for w, t in zip(s["Word"].values.tolist(),
+
                                                            s["Tag"].values.tolist())]
-        print(agg_func)
-        # self.grouped = self.data.groupby("Sentence #").apply(agg_func)
-        # self.grouped = agg_func
-        # self.sentences = [s for s in self.grouped]
+        self.grouped = self.data.groupby("Sentence #").apply(agg_func)
+        self.sentences = [s for s in self.grouped]
 
     def get_next(self):
-        try:
-            # s = self.grouped["Sentence: {}".format(self.n_sent)]
-            # self.n_sent += 1
-            # return s
-            pass
-        except:
-            return None
+        # try:
+            s = self.grouped["Sentence: {}".format(self.n_sent)]
+            self.n_sent += 1
+            return s
+        # except:
+        #     return None
